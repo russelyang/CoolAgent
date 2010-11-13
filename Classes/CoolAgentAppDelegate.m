@@ -31,17 +31,17 @@
     // Override point for customization after application launch.
 
     // Add the navigation controller's view to the window and display.
-    //[window addSubview:navigationController.view];
-	[window setBackgroundColor:[UIColor redColor]];
-	CGRect textFieldFrame = CGRectMake(50, 50, 150, 40);
-	UILabel* lable = [[UILabel alloc] initWithFrame:textFieldFrame];
-	lable.textColor = [UIColor whiteColor];
-	lable.backgroundColor = [UIColor redColor];
-	lable.shadowColor = [UIColor blackColor];
-	lable.font = [UIFont systemFontOfSize:24];	
-	lable.text = @"Hello World";
-	
-	[window addSubview:lable];
+    [window addSubview:navigationController.view];
+	//[window setBackgroundColor:[UIColor redColor]];
+//	CGRect textFieldFrame = CGRectMake(50, 50, 150, 40);
+//	UILabel* lable = [[UILabel alloc] initWithFrame:textFieldFrame];
+//	lable.textColor = [UIColor whiteColor];
+//	lable.backgroundColor = [UIColor redColor];
+//	lable.shadowColor = [UIColor blackColor];
+//	lable.font = [UIFont systemFontOfSize:24];	
+//	lable.text = @"Hello World";
+//	
+//	[window addSubview:lable];
     [window makeKeyAndVisible];
 	
 
