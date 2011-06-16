@@ -8,6 +8,7 @@
 
 #import "CoolAgentAppDelegate.h"
 #import "RootViewController.h"
+#import "contact.h"
 
 
 @implementation CoolAgentAppDelegate
@@ -29,6 +30,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
+	Contact* c = [[Contact alloc] init];
+	c.firstName = @"russel";
+	c.lastName = @"yang";
+	c.email = @"russel.yang@gmail.com";
+	[c display];
+	[c release];
 
     // Add the navigation controller's view to the window and display.
     [window addSubview:navigationController.view];
