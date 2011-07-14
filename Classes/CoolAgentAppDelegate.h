@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+
 @interface CoolAgentAppDelegate : NSObject <UIApplicationDelegate> {
     
     UIWindow *window;

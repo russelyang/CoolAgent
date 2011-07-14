@@ -9,6 +9,7 @@
 #import "CoolAgentAppDelegate.h"
 #import "RootViewController.h"
 #import "contact.h"
+#import "SignInViewController.h"
 
 
 @implementation CoolAgentAppDelegate
@@ -36,9 +37,13 @@
 	c.email = @"russel.yang@gmail.com";
 	[c display];
 	[c release];
+	
+	SignInViewController* signInViewController = [[SignInViewController alloc] initWithNibName:@"login" bundle:nil];
+	[window addSubview:signInViewController.view];
+	//[signInViewController release];
 
     // Add the navigation controller's view to the window and display.
-    [window addSubview:navigationController.view];
+    //[window addSubview:navigationController.view];
 	//[window setBackgroundColor:[UIColor redColor]];
 //	CGRect textFieldFrame = CGRectMake(50, 50, 150, 40);
 //	UILabel* lable = [[UILabel alloc] initWithFrame:textFieldFrame];
